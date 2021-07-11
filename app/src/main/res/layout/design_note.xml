@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/note_layout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="This is Title"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_below="@+id/title"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Description"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/date"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/darkgray"-->
+<!--                android:textSize="10sp"-->
+<!--                android:text="12/12/12"-->
+<!--                android:layout_below="@+id/description"-->
+<!--                android:layout_toLeftOf="@+id/time"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:layout_marginBottom="3dp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/time"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/darkgray"-->
+<!--                android:textSize="10sp"-->
+<!--                android:text="12:12"-->
+<!--                android:layout_below="@+id/description"-->
+<!--                android:layout_marginStart="7dp"-->
+<!--                android:layout_marginBottom="3dp"-->
+<!--                android:layout_toLeftOf="@+id/setalarm"-->
+<!--                android:layout_marginEnd="5dp"/>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/setalarm"-->
+<!--                android:layout_width="13dp"-->
+<!--                android:layout_height="13dp"-->
+<!--                android:layout_below="@+id/description"-->
+<!--                android:layout_marginBottom="3dp"-->
+<!--                android:layout_marginEnd="9dp"-->
+<!--                android:layout_alignParentRight="true"/>-->
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
